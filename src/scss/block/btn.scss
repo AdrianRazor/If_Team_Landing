@@ -34,3 +34,13 @@
     background-color: var(--white);
   }
 }
+
+@media (max-width: 767px) {
+  .btn {
+    width: 100%;
+
+    &--login {
+      width: 120px;
+    }
+  }
+}

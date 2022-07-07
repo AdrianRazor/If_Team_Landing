@@ -1,11 +1,16 @@
-.title-1,
-.title-2,
-.title-3,
-.title-4 {
+.title {
   font-family: "Rubik", serif;
   font-style: normal;
-  line-height: 100%;
+  line-height: 120%;
   color: var(--black);
+
+  &--blue {
+    color: var(--blue);
+  }
+
+  &--white {
+    color: var(--white);
+  }
 }
 
 .title-1 {

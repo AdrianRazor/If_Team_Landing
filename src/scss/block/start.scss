@@ -1,0 +1,41 @@
+.start {
+  padding-top: 20px;
+
+  &__container {
+    position: relative;
+    padding-top: 135px;
+    padding-bottom: 285px;
+  }
+
+  &__info {
+    z-index: 20;
+  }
+
+  &__title {
+    max-width: 520px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  &__text {
+    max-width: 440px;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__img-1 {
+    width: 813px;
+    height: 539px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  &__img-2 {
+    width: 601px;
+    height: 167px;
+    position: absolute;
+    top: 58%;
+    left: 41%;
+  }
+}
