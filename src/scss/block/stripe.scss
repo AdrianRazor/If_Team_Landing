@@ -1,0 +1,42 @@
+.stripe {
+  padding: 20px 0;
+  background-color: var(--sky);
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0 80px;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+
+    &--logo {
+      height: 50px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__img {
+    width: 60px;
+    height: 60px;
+    border-radius: 999px;
+    background-color: var(--white);
+    padding: 10px 12px;
+  }
+
+  &__title {
+    white-space: nowrap;
+  }
+
+  &--blue {
+    margin-top: 25px;
+    background-color: var(--blue);
+
+    & .stripe__title {
+      color: var(--white);
+    }
+  }
+}

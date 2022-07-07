@@ -45,6 +45,7 @@ img {
   --white: #fff;
   --gray: #aeaeae;
   --black: #303139;
+  --sky: #e8edfd;
   --blue: #174be6;
   --blue-2: #0e35b9;
   --dark-blue: #081f6d;
@@ -181,17 +182,17 @@ body {
   height: 60px;
   border-radius: 6px;
   background-color: var(--blue);
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .btn:hover {
   color: var(--white);
   background-color: var(--blue-2);
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .btn--login {
@@ -292,6 +293,58 @@ body {
   position: absolute;
   top: 58%;
   left: 41%;
+}
+
+.stripe {
+  padding: 20px 0;
+  background-color: var(--sky);
+}
+
+.stripe__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 80px;
+}
+
+.stripe__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.stripe__item--logo {
+  height: 50px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.stripe__img {
+  width: 60px;
+  height: 60px;
+  border-radius: 999px;
+  background-color: var(--white);
+  padding: 10px 12px;
+}
+
+.stripe__title {
+  white-space: nowrap;
+}
+
+.stripe--blue {
+  margin-top: 25px;
+  background-color: var(--blue);
+}
+
+.stripe--blue .stripe__title {
+  color: var(--white);
 }
 
 @media (max-width: 767px) {
