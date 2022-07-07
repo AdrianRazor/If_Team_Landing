@@ -1,0 +1,36 @@
+.btn {
+  font-family: "Rubik", serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: var(--white);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 260px;
+  height: 60px;
+  border-radius: 6px;
+  background-color: var(--blue);
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--white);
+    background-color: var(--blue-2);
+    transition: all 0.3s ease;
+  }
+
+  &--login {
+    font-size: 14px;
+    width: 120px;
+    height: 50px;
+    background-color: var(--dark-blue);
+  }
+
+  &--white {
+    color: var(--dark-blue);
+    background-color: var(--white);
+  }
+}

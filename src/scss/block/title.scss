@@ -1,0 +1,45 @@
+.title-1,
+.title-2,
+.title-3,
+.title-4 {
+  font-family: "Rubik", serif;
+  font-style: normal;
+  line-height: 100%;
+  color: var(--black);
+}
+
+.title-1 {
+  font-weight: 600;
+  font-size: 50px;
+}
+
+.title-2 {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.title-3 {
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.title-4 {
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.title-5 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.title-6 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+// @media (max-width: 767px) {
+//   .title {
+//     font-size: 32px;
+//   }
+// }
