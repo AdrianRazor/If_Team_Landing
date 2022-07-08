@@ -40,3 +40,29 @@
     }
   }
 }
+
+@media (max-width: 767px) {
+  .stripe {
+    &__list {
+      gap: 0 50px;
+    }
+
+    &__item {
+      gap: 0 15px;
+
+      &--logo {
+        height: 43px;
+      }
+    }
+
+    &__img {
+      width: 50px;
+      height: 50px;
+      padding: 9px;
+    }
+
+    &--blue {
+      margin-top: 20px;
+    }
+  }
+}

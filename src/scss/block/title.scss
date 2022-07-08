@@ -43,8 +43,17 @@
   font-size: 20px;
 }
 
-// @media (max-width: 767px) {
-//   .title {
-//     font-size: 32px;
-//   }
-// }
+@media (max-width: 767px) {
+  .title-1 {
+    font-size: 48px;
+  }
+  .title-2 {
+    font-size: 40px;
+  }
+  .title-3 {
+    font-size: 32px;
+  }
+  .title-4 {
+    font-size: 24px;
+  }
+}
