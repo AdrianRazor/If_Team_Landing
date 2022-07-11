@@ -1,1 +1,1 @@
-# https://adrianrazor.github.io/If_Team_Landing/index.html
+# https://adrianrazor.github.io/If_Team_Landing/public/index.html
