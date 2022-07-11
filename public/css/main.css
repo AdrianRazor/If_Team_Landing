@@ -280,8 +280,9 @@ body {
   color: var(--gray);
 }
 
-.headline__text--white {
+.headline__text--opacity {
   color: var(--white);
+  opacity: 0.7;
 }
 
 .header {
@@ -360,6 +361,10 @@ body {
 
 .stripe {
   padding: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
   background-color: var(--sky);
 }
 
@@ -371,6 +376,17 @@ body {
   -ms-flex-align: center;
   align-items: center;
   gap: 0 80px;
+  -webkit-animation: movingLeft 20s linear infinite;
+  animation: movingLeft 20s linear infinite;
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
+}
+
+.stripe__list:nth-of-type(2) {
+  -webkit-animation: movingLeft2 20s linear infinite;
+  animation: movingLeft2 20s linear infinite;
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
 }
 
 .stripe__item {
@@ -381,12 +397,12 @@ body {
   -ms-flex-align: center;
   align-items: center;
   gap: 0 20px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
 }
 
 .stripe__item--logo {
-  height: 50px;
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  width: 140px;
 }
 
 .stripe__item--logo img {
@@ -394,6 +410,10 @@ body {
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+}
+
+.stripe__item:last-of-type {
+  margin-right: 80px;
 }
 
 .stripe__img {
@@ -415,6 +435,116 @@ body {
 
 .stripe--blue .stripe__title {
   color: var(--white);
+}
+
+.stripe--blue .stripe__list {
+  -webkit-animation: movingRight 20s linear infinite;
+  animation: movingRight 20s linear infinite;
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
+}
+
+.stripe--blue .stripe__list:nth-of-type(2) {
+  -webkit-animation: movingRight2 20s linear infinite;
+  animation: movingRight2 20s linear infinite;
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
+}
+
+@-webkit-keyframes movingLeft {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes movingLeft {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@-webkit-keyframes movingLeft2 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes movingLeft2 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}
+
+@-webkit-keyframes movingRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes movingRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@-webkit-keyframes movingRight2 {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+@keyframes movingRight2 {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .fix {
@@ -538,6 +668,7 @@ body {
 }
 
 .company__title {
+  max-width: 410px;
   margin-bottom: 15px;
 }
 
@@ -778,6 +909,10 @@ body {
 }
 
 .ticker {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-bottom: 150px;
 }
 
@@ -789,10 +924,17 @@ body {
   -ms-flex-align: center;
   align-items: center;
   gap: 0 30px;
+  -webkit-animation: movingLeft 20s linear infinite;
+  animation: movingLeft 20s linear infinite;
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
 }
 
-.ticker__list:last-of-type {
-  margin-top: 30px;
+.ticker__list:nth-of-type(2) {
+  -webkit-animation: movingLeft2 20s linear infinite;
+  animation: movingLeft2 20s linear infinite;
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
 }
 
 .ticker__item {
@@ -810,6 +952,76 @@ body {
   border-radius: 15px;
   -webkit-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
+}
+
+.ticker__item:last-of-type {
+  margin-right: 30px;
+}
+
+.ticker--first {
+  margin-bottom: 30px;
+}
+
+.ticker--first .ticker__list {
+  -webkit-animation: movingRight 20s linear infinite;
+  animation: movingRight 20s linear infinite;
+  -webkit-animation-delay: -20s;
+  animation-delay: -20s;
+}
+
+.ticker--first .ticker__list:nth-of-type(2) {
+  -webkit-animation: movingRight2 20s linear infinite;
+  animation: movingRight2 20s linear infinite;
+  -webkit-animation-delay: -10s;
+  animation-delay: -10s;
+}
+
+@keyframes movingLeft {
+  0% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes movingLeft2 {
+  0% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  100% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes movingRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+  }
+
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes movingRight2 {
+  0% {
+    -webkit-transform: translateX(-200%);
+    transform: translateX(-200%);
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
 }
 
 .footer {
@@ -1216,18 +1428,22 @@ body {
     margin-bottom: 100px;
   }
 
-  .ticker__list {
-    gap: 0 20px;
+  .ticker--first {
+    margin-bottom: 20px;
   }
 
-  .ticker__list:last-of-type {
-    margin-top: 20px;
+  .ticker__list {
+    gap: 0 20px;
   }
 
   .ticker__item {
     gap: 0 20px;
     width: 320px;
     padding: 30px;
+  }
+
+  .ticker__item:last-of-type {
+    margin-right: 20px;
   }
 
   .footer {

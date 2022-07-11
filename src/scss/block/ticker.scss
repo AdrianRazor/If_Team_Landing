@@ -1,13 +1,18 @@
 .ticker {
+  width: 100%;
+  display: flex;
   margin-bottom: 150px;
 
   &__list {
     display: flex;
     align-items: center;
     gap: 0 30px;
+    animation: movingLeft 20s linear infinite;
+    animation-delay: -20s;
 
-    &:last-of-type {
-      margin-top: 30px;
+    &:nth-of-type(2) {
+      animation: movingLeft2 20s linear infinite;
+      animation-delay: -10s;
     }
   }
 
@@ -21,6 +26,60 @@
     padding: 36px 30px;
     border-radius: 15px;
     box-shadow: var(--shadow);
+
+    &:last-of-type {
+      margin-right: 30px;
+    }
+  }
+
+  &--first {
+    margin-bottom: 30px;
+
+    & .ticker__list {
+      animation: movingRight 20s linear infinite;
+      animation-delay: -20s;
+    }
+
+    & .ticker__list:nth-of-type(2) {
+      animation: movingRight2 20s linear infinite;
+      animation-delay: -10s;
+    }
+  }
+}
+
+@keyframes movingLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes movingLeft2 {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+
+@keyframes movingRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes movingRight2 {
+  0% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
@@ -28,18 +87,22 @@
   .ticker {
     margin-bottom: 100px;
 
+    &--first {
+      margin-bottom: 20px;
+    }
+
     &__list {
       gap: 0 20px;
-
-      &:last-of-type {
-        margin-top: 20px;
-      }
     }
 
     &__item {
       gap: 0 20px;
       width: 320px;
       padding: 30px;
+
+      &:last-of-type {
+        margin-right: 20px;
+      }
     }
   }
 }
