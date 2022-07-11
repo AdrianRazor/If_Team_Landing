@@ -7,7 +7,6 @@
   }
 
   &__block {
-    min-height: 470px;
     padding: 30px;
     background-color: var(--blue-2);
     border-radius: 20px;
@@ -22,15 +21,27 @@
     margin-bottom: 15px;
   }
 
-  &__text {
-  }
-
   &__img {
-    max-height: 292px;
+    max-width: 100%;
+  }
+}
 
-    & img {
-      max-width: 100%;
-      object-fit: cover;
+@media (max-width: 767px) {
+  .company {
+    margin-bottom: 100px;
+
+    &__wrapper {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
+    &__block {
+      border-radius: 10px;
+      gap: 20px 0;
+    }
+
+    &__title {
+      font-size: 20px;
     }
   }
 }

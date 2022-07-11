@@ -510,7 +510,6 @@ body {
 }
 
 .company__block {
-  min-height: 470px;
   padding: 30px;
   background-color: var(--blue-2);
   border-radius: 20px;
@@ -532,13 +531,67 @@ body {
 }
 
 .company__img {
-  max-height: 292px;
+  max-width: 100%;
 }
 
-.company__img img {
-  max-width: 100%;
-  -o-object-fit: cover;
-  object-fit: cover;
+.client {
+  margin-bottom: 250px;
+}
+
+.client__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 40px;
+  margin-bottom: 60px;
+}
+
+.client__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 20px;
+}
+
+.client__number {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 999px;
+  background-color: var(--sky);
+  color: var(--blue);
+}
+
+.client__box {
+  position: relative;
+}
+
+.client__img-1 {
+  border-radius: 15px;
+  max-width: 93%;
+  width: 100%;
+}
+
+.client__img-2 {
+  max-width: 54%;
+  position: absolute;
+  bottom: -28%;
+  right: 0;
 }
 
 @media (max-width: 1279px) {
@@ -587,6 +640,28 @@ body {
   .start__img-1 {
     max-width: 700px;
   }
+
+  .client {
+    margin-bottom: 150px;
+  }
+
+  .client__list {
+    grid-template-columns: 1fr;
+    gap: 30px 0;
+    margin-bottom: 40px;
+  }
+
+  .client__img-1 {
+    max-width: initial;
+    width: initial;
+    max-height: 265px;
+  }
+
+  .client__img-2 {
+    max-width: initial;
+    max-height: 88px;
+    bottom: -17%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -604,6 +679,10 @@ body {
 
   .title-4 {
     font-size: 24px;
+  }
+
+  .text-1 {
+    font-size: 18px;
   }
 
   .btn {
@@ -720,5 +799,26 @@ body {
 
   .fix__img-4 {
     max-width: 44%;
+  }
+
+  .company {
+    margin-bottom: 100px;
+  }
+
+  .company__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  .company__block {
+    border-radius: 10px;
+    gap: 20px 0;
+  }
+
+  .company__title {
+    font-size: 20px;
   }
 }
