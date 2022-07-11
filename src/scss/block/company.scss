@@ -1,0 +1,36 @@
+.company {
+  margin-bottom: 150px;
+
+  &__wrapper {
+    display: flex;
+    gap: 0 30px;
+  }
+
+  &__block {
+    min-height: 470px;
+    padding: 30px;
+    background-color: var(--blue-2);
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 25px 0;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+  }
+
+  &__text {
+  }
+
+  &__img {
+    max-height: 292px;
+
+    & img {
+      max-width: 100%;
+      object-fit: cover;
+    }
+  }
+}

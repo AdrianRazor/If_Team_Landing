@@ -11,6 +11,10 @@
   &--white {
     color: var(--white);
   }
+
+  &--upper {
+    text-transform: uppercase;
+  }
 }
 
 .title-1 {

@@ -10,6 +10,10 @@
 
 .text {
   font-size: 16px;
+
+  &--white {
+    color: var(--white);
+  }
 }
 
 .text-1 {
