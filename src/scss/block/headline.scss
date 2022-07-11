@@ -22,6 +22,10 @@
   &__text {
     max-width: 445px;
     color: var(--gray);
+
+    &--white {
+      color: var(--white);
+    }
   }
 }
 
