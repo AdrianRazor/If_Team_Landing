@@ -18,6 +18,10 @@
 
 .text-1 {
   font-size: 20px;
+
+  &--white {
+    color: var(--white);
+  }
 }
 
 .text-2 {
