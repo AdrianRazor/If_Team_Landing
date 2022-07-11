@@ -1,0 +1,45 @@
+.ticker {
+  margin-bottom: 150px;
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 0 30px;
+
+    &:last-of-type {
+      margin-top: 30px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 0 25px;
+    flex-shrink: 0;
+
+    width: 380px;
+    padding: 36px 30px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+  }
+}
+
+@media (max-width: 767px) {
+  .ticker {
+    margin-bottom: 100px;
+
+    &__list {
+      gap: 0 20px;
+
+      &:last-of-type {
+        margin-top: 20px;
+      }
+    }
+
+    &__item {
+      gap: 0 20px;
+      width: 320px;
+      padding: 30px;
+    }
+  }
+}

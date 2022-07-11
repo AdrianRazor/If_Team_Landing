@@ -49,8 +49,6 @@
 
 @media (max-width: 1023px) {
   .client {
-    margin-bottom: 150px;
-
     &__list {
       grid-template-columns: 1fr;
       gap: 30px 0;
@@ -68,5 +66,11 @@
       max-height: 88px;
       bottom: -17%;
     }
+  }
+}
+
+@media (max-width: 767px) {
+  .client {
+    margin-bottom: 150px;
   }
 }

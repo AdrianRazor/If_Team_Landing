@@ -769,17 +769,47 @@ body {
   object-position: top right;
 }
 
-.finance__item:nth-of-type(3) img {
-  -o-object-position: center;
-  object-position: center;
-}
-
 .begin {
   margin-bottom: 70px;
 }
 
 .begin__title {
   margin-bottom: 15px;
+}
+
+.ticker {
+  margin-bottom: 150px;
+}
+
+.ticker__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 30px;
+}
+
+.ticker__list:last-of-type {
+  margin-top: 30px;
+}
+
+.ticker__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0 25px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  width: 380px;
+  padding: 36px 30px;
+  border-radius: 15px;
+  -webkit-box-shadow: var(--shadow);
+  box-shadow: var(--shadow);
 }
 
 .footer {
@@ -914,10 +944,6 @@ body {
 
   .start__img-1 {
     max-width: 700px;
-  }
-
-  .client {
-    margin-bottom: 150px;
   }
 
   .client__list {
@@ -1135,6 +1161,10 @@ body {
     font-size: 20px;
   }
 
+  .client {
+    margin-bottom: 150px;
+  }
+
   .task {
     margin-bottom: 100px;
   }
@@ -1173,8 +1203,31 @@ body {
     height: 302px;
   }
 
+  .finance__item:nth-of-type(3) img {
+    -o-object-position: 50% 17%;
+    object-position: 50% 17%;
+  }
+
   .begin {
     margin-bottom: 50px;
+  }
+
+  .ticker {
+    margin-bottom: 100px;
+  }
+
+  .ticker__list {
+    gap: 0 20px;
+  }
+
+  .ticker__list:last-of-type {
+    margin-top: 20px;
+  }
+
+  .ticker__item {
+    gap: 0 20px;
+    width: 320px;
+    padding: 30px;
   }
 
   .footer {
