@@ -23,6 +23,11 @@
     transition: all 0.2s ease;
   }
 
+  &:active {
+    background-color: var(--dark-blue);
+    transition: all 0.2s ease;
+  }
+
   &--login {
     font-size: 14px;
     width: 120px;
