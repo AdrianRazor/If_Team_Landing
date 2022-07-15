@@ -226,6 +226,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 40px;
+  background-color: var(--white);
 }
 
 .container--footer {
@@ -250,6 +251,9 @@ body {
   -webkit-box-shadow: var(--shadow);
   box-shadow: var(--shadow);
   overflow: hidden;
+  -webkit-transition: 0.7s cubic-bezier(0.2, 0.3, 0.4, 0.8);
+  -o-transition: 0.7s cubic-bezier(0.2, 0.3, 0.4, 0.8);
+  transition: 0.7s cubic-bezier(0.2, 0.3, 0.4, 0.8);
 }
 
 .headline__box {
@@ -870,6 +874,8 @@ body {
 }
 
 .finance__item {
+  position: relative;
+  background-color: var(--white);
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;

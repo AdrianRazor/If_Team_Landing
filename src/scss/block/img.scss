@@ -2,6 +2,7 @@
   border-radius: 6px;
   box-shadow: var(--shadow);
   overflow: hidden;
+  transition: 0.7s cubic-bezier(0.2, 0.3, 0.4, 0.8);
 }
 
 @media (max-width: 767px) {
