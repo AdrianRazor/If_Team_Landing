@@ -6,7 +6,6 @@
   font-weight: 400;
   line-height: normal;
   color: var(--black);
-  opacity: 1;
 }
 
 .text {
@@ -14,24 +13,6 @@
 
   &--white {
     color: var(--white);
-  }
-
-  &--test1 {
-    font-family: "Rubik", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: var(--black);
-    margin-bottom: 20px;
-  }
-
-  &--test2 {
-    font-family: "Poppins", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    color: var(--black);
-    margin-bottom: 20px;
   }
 }
 

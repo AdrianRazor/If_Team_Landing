@@ -73,14 +73,6 @@ body {
 }
 
 @font-face {
-  font-family: "Poppins";
-  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff"), url("../fonts/Poppins-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
   font-family: "Rubik";
   src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype");
   font-style: normal;
@@ -102,7 +94,6 @@ body {
   line-height: normal;
   color: var(--black);
   width: 100%;
-  opacity: 1;
 }
 
 .title--blue {
@@ -155,7 +146,6 @@ body {
   font-weight: 400;
   line-height: normal;
   color: var(--black);
-  opacity: 1;
 }
 
 .text {
@@ -164,24 +154,6 @@ body {
 
 .text--white {
   color: var(--white);
-}
-
-.text--test1 {
-  font-family: "Rubik", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  color: var(--black);
-  margin-bottom: 20px;
-}
-
-.text--test2 {
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  color: var(--black);
-  margin-bottom: 20px;
 }
 
 .text-1 {
