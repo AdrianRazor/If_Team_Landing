@@ -89,11 +89,12 @@ body {
 }
 
 .title {
-  font-family: "Rubik", serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   line-height: normal;
   color: var(--black);
   width: 100%;
+  opacity: 1;
 }
 
 .title--blue {
@@ -141,11 +142,12 @@ body {
 .text,
 .text-1,
 .text-2 {
-  font-family: "Rubik", serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: var(--black);
+  opacity: 1;
 }
 
 .text {
@@ -169,7 +171,7 @@ body {
 }
 
 .btn {
-  font-family: "Rubik", serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -189,6 +191,7 @@ body {
   padding: 10px;
   border-radius: 6px;
   background-color: var(--blue);
+  opacity: 1;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;

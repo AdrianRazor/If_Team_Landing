@@ -1,11 +1,12 @@
 .text,
 .text-1,
 .text-2 {
-  font-family: "Rubik", serif;
+  font-family: "Rubik", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
   color: var(--black);
+  opacity: 1;
 }
 
 .text {
