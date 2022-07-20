@@ -7,13 +7,6 @@
     display: flex;
     align-items: center;
     gap: 0 30px;
-    animation: movingLeft 20s linear infinite;
-    animation-delay: -20s;
-
-    &:nth-of-type(2) {
-      animation: movingLeft2 20s linear infinite;
-      animation-delay: -10s;
-    }
   }
 
   &__item {
@@ -34,52 +27,6 @@
 
   &--first {
     margin-bottom: 30px;
-
-    & .ticker__list {
-      animation: movingRight 20s linear infinite;
-      animation-delay: -20s;
-    }
-
-    & .ticker__list:nth-of-type(2) {
-      animation: movingRight2 20s linear infinite;
-      animation-delay: -10s;
-    }
-  }
-}
-
-@keyframes movingLeft {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-@keyframes movingLeft2 {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-200%);
-  }
-}
-
-@keyframes movingRight {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(100%);
-  }
-}
-
-@keyframes movingRight2 {
-  0% {
-    transform: translateX(-200%);
-  }
-  100% {
-    transform: translateX(0);
   }
 }
 

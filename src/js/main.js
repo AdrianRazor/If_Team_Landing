@@ -4,6 +4,21 @@ import { CustomEase } from "gsap/CustomEase";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
+// Анимация бегущей строки
+gsap.to(".marquee-left", {
+  xPercent: -100,
+  repeat: -1,
+  duration: 15,
+  ease: "linear",
+});
+
+gsap.from(".marquee-right", {
+  xPercent: -100,
+  repeat: -1,
+  duration: 15,
+  ease: "linear",
+});
+
 // Анимация стартового экрана
 const timelineStart = gsap.timeline({ defaults: { ease: "power2.out" } });
 timelineStart
