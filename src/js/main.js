@@ -9,12 +9,7 @@ const timelineStart = gsap.timeline({ defaults: { ease: "power2.out" } });
 timelineStart
   .from(".header__container", { y: -50, opacity: 0, duration: 1 })
   .from(".start__title", { y: 50, opacity: 0, duration: 1 }, "-=0.8")
-  .fromTo(
-    ".start__text",
-    { y: 50, opacity: 0, duration: 1 },
-    { y: 0, opacity: 1 },
-    "-=0.8"
-  )
+  .from(".start__text", { y: 50, opacity: 0, duration: 1 }, "-=0.8")
   .from(".start__btn", { y: 30, opacity: 0, duration: 0.4 }, "-=0.8")
   .from(".start__box", { x: 50, opacity: 0, duration: 1 }, "-=0.9")
   .from(".stripe", { y: 50, opacity: 0, duration: 1 }, "-=0.9");
