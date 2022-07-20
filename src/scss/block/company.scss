@@ -1,5 +1,5 @@
 .company {
-  margin-bottom: 150px;
+  margin-bottom: 145px;
 
   &__wrapper {
     display: flex;
@@ -20,10 +20,21 @@
   &__title {
     max-width: 410px;
     margin-bottom: 15px;
+
+    & span {
+      display: block;
+    }
   }
 
   &__img {
-    max-width: 100%;
+    width: 100%;
+    height: 292px;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }
 
@@ -37,12 +48,28 @@
     }
 
     &__block {
+      min-height: 340px;
       border-radius: 10px;
       gap: 20px 0;
+
+      &--right {
+        & .text span {
+          display: block;
+        }
+      }
     }
 
     &__title {
+      max-width: 278px;
       font-size: 20px;
+
+      & span {
+        display: initial;
+      }
+    }
+
+    &__img {
+      height: 159px;
     }
   }
 }

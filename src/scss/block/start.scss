@@ -1,6 +1,6 @@
 .start {
   padding-top: 20px;
-  padding-bottom: 210px;
+  padding-bottom: 215px;
 
   &__container {
     display: flex;
@@ -15,8 +15,7 @@
 
   &__title {
     max-width: 520px;
-    width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 
   &__text {
@@ -42,8 +41,8 @@
   &__img-2 {
     max-width: 600px;
     position: absolute;
-    top: 83%;
-    left: -110px;
+    top: 81.5%;
+    left: -108px;
   }
 }
 
@@ -66,7 +65,8 @@
 
 @media (max-width: 767px) {
   .start {
-    padding-bottom: 140px;
+    padding-top: 0;
+    padding-bottom: 137px;
 
     &__container {
       display: flex;
@@ -82,18 +82,23 @@
       margin-bottom: 25px;
     }
 
+    &__text {
+      max-width: 440px;
+      margin-bottom: 40px;
+    }
+
     &__img-1 {
       border-radius: 10px;
       position: relative;
       max-height: 310px;
-      left: 14%;
+      left: 15%;
     }
 
     &__img-2 {
       max-height: 97px;
       top: initial;
-      bottom: -5%;
-      left: 4%;
+      bottom: -11%;
+      left: 0;
     }
   }
 }

@@ -9,13 +9,13 @@
 
   &__info {
     display: flex;
-    gap: 0 60px;
+    gap: 0 58px;
   }
 
   &__list {
     display: flex;
     flex-direction: column;
-    gap: 60px 0;
+    gap: 64px 0;
     max-width: 310px;
   }
 
@@ -56,12 +56,12 @@
 
     &__info {
       flex-direction: column;
-      gap: 50px 0;
+      gap: 48px 0;
     }
 
     &__list {
       max-width: 100%;
-      gap: 30px 0;
+      gap: 26px 0;
     }
 
     &__img {

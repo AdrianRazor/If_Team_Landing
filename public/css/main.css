@@ -66,14 +66,6 @@ body {
 
 @font-face {
   font-family: "Rubik";
-  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype");
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Rubik";
   src: url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype");
   font-style: normal;
   font-weight: 500;
@@ -88,10 +80,18 @@ body {
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
 .title {
   font-family: "Rubik", serif;
   font-style: normal;
-  line-height: 120%;
+  line-height: normal;
   color: var(--black);
   width: 100%;
 }
@@ -144,7 +144,7 @@ body {
   font-family: "Rubik", serif;
   font-style: normal;
   font-weight: 400;
-  line-height: 120%;
+  line-height: normal;
   color: var(--black);
 }
 
@@ -173,7 +173,7 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 100%;
+  line-height: normal;
   color: var(--white);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,6 +256,10 @@ body {
   transition: 0.7s cubic-bezier(0.2, 0.3, 0.4, 0.8);
 }
 
+.headline {
+  margin-bottom: 70px;
+}
+
 .headline__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,12 +267,12 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 0 10px;
-  margin-bottom: 15px;
+  gap: 0 12px;
+  margin-bottom: 20px;
 }
 
 .headline__logo {
-  width: 50px;
+  width: 51px;
   height: 50px;
 }
 
@@ -283,15 +287,17 @@ body {
   -ms-flex-align: center;
   align-items: center;
   gap: 0 40px;
-  margin-bottom: 70px;
 }
 
 .headline__text {
   max-width: 445px;
+  width: 100%;
+  margin-top: -5px;
   color: var(--gray);
 }
 
 .headline__text--opacity {
+  width: initial;
   color: var(--white);
   opacity: 0.7;
 }
@@ -320,7 +326,7 @@ body {
 
 .start {
   padding-top: 20px;
-  padding-bottom: 210px;
+  padding-bottom: 215px;
 }
 
 .start__container {
@@ -339,8 +345,7 @@ body {
 
 .start__title {
   max-width: 520px;
-  width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .start__text {
@@ -366,8 +371,8 @@ body {
 .start__img-2 {
   max-width: 600px;
   position: absolute;
-  top: 83%;
-  left: -110px;
+  top: 81.5%;
+  left: -108px;
 }
 
 .stripe {
@@ -560,7 +565,7 @@ body {
 
 .fix {
   padding-top: 150px;
-  padding-bottom: 220px;
+  padding-bottom: 224px;
 }
 
 .fix__container {
@@ -630,7 +635,7 @@ body {
   max-width: 24%;
   position: absolute;
   top: -9%;
-  right: -9%;
+  right: -10%;
   z-index: 10;
 }
 
@@ -646,12 +651,12 @@ body {
   max-width: 43%;
   position: absolute;
   bottom: -13%;
-  right: -16%;
+  right: -17%;
   z-index: 10;
 }
 
 .company {
-  margin-bottom: 150px;
+  margin-bottom: 145px;
 }
 
 .company__wrapper {
@@ -683,17 +688,33 @@ body {
   margin-bottom: 15px;
 }
 
+.company__title span {
+  display: block;
+}
+
 .company__img {
-  max-width: 100%;
+  width: 100%;
+  height: 292px;
+}
+
+.company__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .client {
-  margin-bottom: 250px;
+  margin-bottom: 248px;
 }
 
 .client__list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -702,6 +723,8 @@ body {
 }
 
 .client__item {
+  max-width: 337px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -761,7 +784,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 0 60px;
+  gap: 0 58px;
 }
 
 .project__list {
@@ -772,7 +795,7 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 60px 0;
+  gap: 64px 0;
   max-width: 310px;
 }
 
@@ -859,7 +882,7 @@ body {
 }
 
 .finance {
-  margin-bottom: 150px;
+  margin-bottom: 134px;
 }
 
 .finance__list {
@@ -870,18 +893,19 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  gap: 50px 0;
+  gap: 20px 0;
 }
 
 .finance__item {
   position: relative;
   background-color: var(--white);
+  padding: 15px 0 !important;
   display: grid;
   grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  gap: 0 75px;
+  gap: 0 45px;
   opacity: 1;
   -webkit-transition: opacity 0.3 ease;
   -o-transition: opacity 0.3 ease;
@@ -919,9 +943,14 @@ body {
   display: block;
 }
 
-.finance__item:nth-of-type(2) img {
+.pin-spacer:nth-of-type(2) .finance__item img {
   -o-object-position: top right;
   object-position: top right;
+}
+
+.pin-spacer:nth-of-type(3) .finance__item img {
+  -o-object-position: center center;
+  object-position: center center;
 }
 
 .begin {
@@ -1157,6 +1186,10 @@ body {
 }
 
 @media (max-width: 1023px) {
+  .headline {
+    margin-bottom: 50px;
+  }
+
   .headline__block {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -1165,8 +1198,7 @@ body {
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    gap: 25px 0;
-    margin-bottom: 50px;
+    gap: 30px 0;
   }
 
   .start__container {
@@ -1183,7 +1215,10 @@ body {
   }
 
   .client__list {
-    grid-template-columns: 1fr;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 30px 0;
     margin-bottom: 40px;
   }
@@ -1214,12 +1249,12 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 50px 0;
+    gap: 48px 0;
   }
 
   .project__list {
     max-width: 100%;
-    gap: 30px 0;
+    gap: 26px 0;
   }
 
   .project__img {
@@ -1293,7 +1328,8 @@ body {
   }
 
   .start {
-    padding-bottom: 140px;
+    padding-top: 0;
+    padding-bottom: 137px;
   }
 
   .start__container {
@@ -1315,18 +1351,23 @@ body {
     margin-bottom: 25px;
   }
 
+  .start__text {
+    max-width: 440px;
+    margin-bottom: 40px;
+  }
+
   .start__img-1 {
     border-radius: 10px;
     position: relative;
     max-height: 310px;
-    left: 14%;
+    left: 15%;
   }
 
   .start__img-2 {
     max-height: 97px;
     top: initial;
-    bottom: -5%;
-    left: 4%;
+    bottom: -11%;
+    left: 0;
   }
 
   .stripe__list {
@@ -1353,11 +1394,12 @@ body {
 
   .fix {
     padding-top: 100px;
-    padding-bottom: 180px;
+    padding-bottom: 177px;
   }
 
   .fix__text {
-    margin-bottom: 75px;
+    max-width: 300px;
+    margin-bottom: 90px;
   }
 
   .fix__img-1 {
@@ -1365,14 +1407,18 @@ body {
   }
 
   .fix__img-2 {
+    top: -10%;
     max-width: 26%;
   }
 
   .fix__img-3 {
+    bottom: -14%;
+    left: 1%;
     max-width: 43%;
   }
 
   .fix__img-4 {
+    bottom: -36%;
     max-width: 44%;
   }
 
@@ -1389,12 +1435,26 @@ body {
   }
 
   .company__block {
+    min-height: 340px;
     border-radius: 10px;
     gap: 20px 0;
   }
 
+  .company__block--right .text span {
+    display: block;
+  }
+
   .company__title {
+    max-width: 278px;
     font-size: 20px;
+  }
+
+  .company__title span {
+    display: initial;
+  }
+
+  .company__img {
+    height: 159px;
   }
 
   .client {
@@ -1406,7 +1466,13 @@ body {
   }
 
   .task__item {
+    min-height: 483px;
     padding: 30px 30px 0 30px;
+    gap: 20px 0;
+  }
+
+  .task__text {
+    max-width: 250px;
   }
 
   .task__img {
@@ -1415,7 +1481,12 @@ body {
   }
 
   .finance {
-    margin-bottom: 100px;
+    margin-bottom: 73px;
+  }
+
+  .finance__list {
+    margin-top: -15px;
+    gap: 10px 0;
   }
 
   .finance__item {
@@ -1465,6 +1536,11 @@ body {
 
   .ticker__item:last-of-type {
     margin-right: 20px;
+  }
+
+  .ticker__item img {
+    width: 50px;
+    height: 50px;
   }
 
   .footer {
