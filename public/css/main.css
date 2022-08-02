@@ -573,12 +573,8 @@ body {
 }
 
 .company__title {
-  max-width: 410px;
+  max-width: 300px;
   margin-bottom: 15px;
-}
-
-.company__title span {
-  display: block;
 }
 
 .company__img {
