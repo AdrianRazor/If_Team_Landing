@@ -1,4 +1,6 @@
 .begin {
+  background-color: var(--white);
+  margin-top: 134px;
   margin-bottom: 70px;
 
   &__title {
@@ -8,6 +10,7 @@
 
 @media (max-width: 767px) {
   .begin {
+    margin-top: 73px;
     margin-bottom: 50px;
   }
 }

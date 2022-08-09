@@ -766,10 +766,6 @@ body {
   display: block;
 }
 
-.finance {
-  margin-bottom: 134px;
-}
-
 .finance__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -839,6 +835,8 @@ body {
 }
 
 .begin {
+  background-color: var(--white);
+  margin-top: 134px;
   margin-bottom: 70px;
 }
 
@@ -1292,10 +1290,6 @@ body {
     margin-right: -30px;
   }
 
-  .finance {
-    margin-bottom: 73px;
-  }
-
   .finance__list {
     margin-top: -15px;
     gap: 10px 0;
@@ -1304,7 +1298,7 @@ body {
   .finance__item {
     grid-template-columns: 1fr;
     gap: 30px 0;
-    padding: 40px 20px 20px 20px;
+    padding: 40px 10px 50px !important;
   }
 
   .finance__number {
@@ -1325,6 +1319,7 @@ body {
   }
 
   .begin {
+    margin-top: 73px;
     margin-bottom: 50px;
   }
 

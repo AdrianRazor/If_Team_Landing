@@ -26,6 +26,7 @@ timelineStart
   .from(".start__title", { y: 50, opacity: 0, duration: 1 }, "-=0.8")
   .from(".start__text", { y: 50, opacity: 0, duration: 1 }, "-=0.8")
   .from(".start__btn", { y: 30, opacity: 0, duration: 0.4 }, "-=0.8")
+  .from(".start__mail", { y: 30, opacity: 0, duration: 0.4 }, "-=0.8") //удалить позже
   .from(".start__box", { x: 50, opacity: 0, duration: 1 }, "-=0.9")
   .from(".stripe", { y: 50, opacity: 0, duration: 1 }, "-=0.9");
 
