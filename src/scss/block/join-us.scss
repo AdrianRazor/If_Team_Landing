@@ -1,0 +1,69 @@
+.join-us {
+  padding: 75px 0 75px;
+  background-color: var(--blue);
+  position: relative;
+
+  &__container {
+    background-color: var(--blue);
+  }
+
+  &__block {
+    padding: 150px 0 150px;
+    max-width: 591px;
+    &-title {
+      margin-bottom: 40px;
+    }
+
+    &-btn {
+      background-color: var(--white);
+      color: var(--blue);
+    }
+  }
+
+  &__description {
+    margin-bottom: 80px;
+
+    &-img {
+      max-width: 35px;
+      width: 100%;
+      margin-bottom: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+    }
+
+    &-text {
+      max-width: 397px;
+      color: var(--white);
+    }
+    &-span {
+      color: var(--white);
+    }
+  }
+
+  &__parents {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__list {
+    &-item {
+      width: 280px;
+      height: 130px;
+      background-color: #ffffff;
+      border-radius: 15px;
+
+      &:last-child() {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
