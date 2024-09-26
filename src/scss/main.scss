@@ -1,7 +1,9 @@
+@import "vendors/swiper.scss";
+@import "vendors/fancy-box.scss";
+
 @import "block/null.scss";
 @import "block/global.scss";
 @import "block/fonts.scss";
-
 @import "block/title.scss";
 @import "block/text.scss";
 @import "block/btn.scss";
@@ -25,4 +27,5 @@
 @import "block/begin.scss";
 @import "block/ticker.scss";
 @import "block/join-us.scss";
+@import "block/feedback.scss";
 @import "block/footer.scss";

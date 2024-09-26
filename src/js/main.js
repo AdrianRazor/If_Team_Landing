@@ -1,6 +1,9 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { CustomEase } from "gsap/CustomEase";
+import Swiper from "swiper";
+import { Navigation } from "swiper/modules";
+import { Fancybox } from "@fancyapps/ui";
 
 gsap.registerPlugin(ScrollTrigger, CustomEase);
 
@@ -232,3 +235,58 @@ function moving(e) {
     move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
   });
 }
+
+// video play
+
+// const videoPlay = () => {
+//   const videos = document.querySelectorAll(".feedback__content-video");
+//   const buttonsPlay = document.querySelectorAll(".feedback__play");
+
+//   buttonsPlay.forEach((button, index) => {
+//     const video = videos[index];
+
+//     button.addEventListener("click", () => {
+//       video.play();
+//       video.setAttribute("controls", true);
+//       button.style.display = "none";
+//     });
+
+//     // Ожидание завершения видео
+//     video.addEventListener("ended", () => {
+//       video.removeAttribute("controls");
+//       button.style.display = "flex";
+//     });
+//   });
+// };
+
+// videoPlay();
+
+// slider feedback
+const swiper = new Swiper(".feedback__slider", {
+  loop: false,
+  slidesPerView: "auto",
+  // centeredSlides: true,
+  // leftredSlides: true,
+
+  modules: [Navigation],
+
+  // If we need pagination
+  // freeMode: true,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".feedback__slider-next",
+    prevEl: ".feedback__slider-prev",
+  },
+
+  breakpoints: {
+    0: {
+      spaceBetween: 10,
+    },
+
+    768: {
+      spaceBetween: 30,
+    },
+  },
+});
+
+Fancybox.bind("[data-fancybox]", {});

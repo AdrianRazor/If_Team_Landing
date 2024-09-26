@@ -1,0 +1,243 @@
+.feedback {
+  padding: 100px 0 100px;
+  background-color: var(--dark-blue);
+  overflow: hidden;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 20px;
+  }
+
+  &__buttons {
+  }
+
+  &__container {
+    background-color: var(--dark-blue);
+
+    &-buttons {
+      // grid-column: 1;
+      max-width: 1600px;
+
+      margin: 0 auto;
+    }
+
+    &-slider {
+      grid-column: 2 span;
+    }
+  }
+
+  &__block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-title {
+      color: var(--white);
+      margin-bottom: 20px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    align-self: flex-start;
+  }
+
+  &__descr {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 70px;
+
+    &-text {
+      color: var(--white);
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 37.92px;
+    }
+  }
+
+  &__slider {
+    width: 584px;
+    margin-left: 0;
+    overflow: visible;
+
+    &-prev,
+    &-next {
+      cursor: pointer;
+    }
+  }
+
+  &__card {
+    width: 584px;
+    max-height: 365px;
+    padding: 20px;
+    background-color: var(--sky);
+    border-radius: 15px;
+  }
+
+  &__content {
+    position: relative; /* Это нужно, чтобы позиционировать кнопку относительно видео */
+    display: inline-block;
+
+    &-video {
+      max-height: 250px;
+      width: min-content;
+      overflow: hidden;
+      margin-bottom: 15px;
+      max-width: 544px;
+    }
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 12px;
+      background-color: var(--white);
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      img {
+        width: 100%;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+      }
+    }
+  }
+
+  &__person {
+    color: var(--black);
+    &-name {
+      margin-bottom: 5px;
+      font-size: 24px;
+      font-weight: 500;
+      // line-height: 28.44px;
+    }
+
+    &-position {
+      font-size: 16px;
+      font-weight: 400;
+      // line-height: 20.8px;
+    }
+  }
+
+  &__play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+
+  video,
+  iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+@media (max-width: 767px) {
+  .feedback {
+    &__inner {
+      grid-template-columns: 1fr;
+    }
+
+    &__card {
+      max-width: 325px;
+      padding: 10px;
+    }
+
+    &__person {
+      &-name {
+        font-size: 16px;
+      }
+
+      &-position {
+        font-size: 10px;
+      }
+    }
+
+    &__descr {
+      margin-bottom: 50px;
+
+      &-text {
+        font-size: 24px;
+      }
+
+      &-img {
+        max-width: 112px;
+      }
+    }
+
+    &__box {
+      &-img {
+        padding: 5px 6px;
+        width: 30px;
+        height: 30px;
+      }
+    }
+
+    &__play {
+      img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    &__buttons {
+      display: flex;
+      justify-content: space-between;
+      grid-row: 3/4;
+    }
+
+    &__content {
+      &-video {
+        margin-bottom: 5px;
+      }
+    }
+
+    &__container-slider {
+      grid-column: 1 span;
+    }
+
+    &__slide,
+    &__slider {
+      width: 325px;
+    }
+
+    &__container-slider {
+      margin-bottom: 20px;
+    }
+
+    &__slider-prev,
+    &__slider-next {
+      img {
+        max-width: 20px;
+      }
+    }
+  }
+}
